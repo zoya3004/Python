@@ -1,0 +1,20 @@
+#CHOCOLATE JAR
+#You are given an integer array of size n,representing jars of chocolate.Three Students A,B and C respectively,will
+#pick chocolates one by one from each chocolate jar,till the jar is empty,and then repeat the same with the rest of the jars.
+#Your task is to find and return an integer value representing the total number of chocolates that student A will have,
+#after all the chocolates have been picked from all the jars.
+#Note:Once a jar is done A will start taking the chocolates from the new jar.
+#Input1:An integer array representing the quality of chocolates in each jar.
+#input2:An integer value N representing the number of jars
+jars=list(map(int,input().split()))
+n=int(input())
+a=0
+for i in jars:
+    #print("The Iteration is for:",i)
+    a=a+(i//3)
+    #print(a)
+    if i%3!=0:
+        a=a+1
+    else:
+        a=a+0
+print(a)
