@@ -1,0 +1,10 @@
+#ANT RAIL
+n=int(input())
+a=list(map(int,input().split()))
+pos=0
+ans=0
+for i in a:
+    pos=pos+i
+    if pos==0:
+        ans=ans+1
+print(ans)
