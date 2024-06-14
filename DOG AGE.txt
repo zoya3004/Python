@@ -1,0 +1,5 @@
+#DOG AGE
+n=int(input())
+i=7
+ans=n*i
+print(ans)
