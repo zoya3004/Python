@@ -1,0 +1,14 @@
+#DIWALI CONTEST
+#MAX is planning to take part in a Diwali Contest at a Diwali Party that will begin at 8PM and will run until midnigth(12AM)i.e,for 4 hours
+#he also needs to travel to the party venue within this time which takes him to the venue.
+probs=int(input())
+tot=int(input())
+c=0
+s=0
+rt=4*60-tot
+for i in range(1,probs+1):
+    s=s+5*i
+    if s>rt:
+        break
+    c=c+1  
+print(c)
