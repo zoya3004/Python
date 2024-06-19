@@ -1,0 +1,7 @@
+import math
+a=int(input())
+b=int(input())
+gcd=math.gcd(a,b)
+lcm=abs(a*b)//gcd
+print("GCD=",gcd)
+print("LCM=",lcm)
